@@ -1,6 +1,6 @@
 package main.java.com.homework5;
 
-public class Star{
+public class Executer {
 
     MyList<Integer> integerMyList = new MyList<>();
     MyList<String> stringMyList = new MyList<>();
@@ -10,7 +10,7 @@ public class Star{
     HighestAndLowest<Integer> numbers = new HighestAndLowest<>(num);
     HighestAndLowest<Double> doubles2 = new HighestAndLowest<>(doubles);
 
-    public Star star(){
+    public Executer star(){
 
         integerMyList.add(12);
         integerMyList.add(14);
