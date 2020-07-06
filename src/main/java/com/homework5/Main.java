@@ -1,12 +1,10 @@
 package main.java.com.homework5;
 
-import main.java.com.homework5.HighestAndLowest;
-
-import java.sql.SQLOutput;
+import java.util.concurrent.Executor;
 
 public class Main {
-    public static void main(String[] args) {
 
+    public static void main(String[] args) {
         MyList<Integer> integerMyList = new MyList<>();
         integerMyList.add(12);
         integerMyList.add(14);
@@ -24,9 +22,9 @@ public class Main {
         System.out.println("Min word: " + stringMyList.giveMin());
 
         MyList<Long> longMyList = new MyList<>();
-        longMyList.add(124l);
-        longMyList.add(23l);
-        longMyList.add(45l);
+        longMyList.add(124L);
+        longMyList.add(23L);
+        longMyList.add(45L);
 
         System.out.println("Max of stringMyList: " + longMyList.giveMax());
         System.out.println("Min of stringMyList: " + longMyList.giveMin());

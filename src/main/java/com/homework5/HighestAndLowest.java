@@ -12,10 +12,22 @@ public class HighestAndLowest<T extends Comparable<T>> {
     }
 
     public T getMax() {
-        return Arrays.stream(array).max(Comparator.naturalOrder()).get();
+        T max = array[0];
+        for (T t : array) {
+            if (t.compareTo(max) > 0) {
+                max = t;
+            }
+        }
+        return max;
     }
 
     public T getMin() {
-        return Arrays.stream(array).min(Comparator.naturalOrder()).get();
+        T min = array[0];
+        for (T t : array) {
+            if (t.compareTo(min) < 0) {
+                min = t;
+            }
+        }
+        return min;
     }
 }
