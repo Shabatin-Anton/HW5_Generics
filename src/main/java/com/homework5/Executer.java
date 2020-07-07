@@ -10,7 +10,7 @@ public class Executer {
     HighestAndLowest<Integer> numbers = new HighestAndLowest<>(num);
     HighestAndLowest<Double> doubles2 = new HighestAndLowest<>(doubles);
 
-    public Executer star(){
+    public void start() {
 
         integerMyList.add(12);
         integerMyList.add(14);
@@ -23,6 +23,11 @@ public class Executer {
         longMyList.add(124L);
         longMyList.add(23L);
         longMyList.add(45L);
+    }
+
+    public void printResults() {
+
+        start();
 
         System.out.println("Max of integerMyList: " + integerMyList.giveMax());
         System.out.println("Mix of integerMyList: " + integerMyList.giveMin());
@@ -38,7 +43,5 @@ public class Executer {
 
         System.out.println("Highest double: " + doubles2.getMax());
         System.out.println("Lower double: " + doubles2.getMin());
-
-        return null;
     }
 }
