@@ -1,7 +1,7 @@
 package main.java.com.homework5.executer;
 
-import main.java.com.homework5.HighestAndLowest;
-import main.java.com.homework5.MyList;
+import main.java.com.homework5.search.HighestAndLowest;
+import main.java.com.homework5.search.MyList;
 
 public class Executer {
 
@@ -13,7 +13,7 @@ public class Executer {
     HighestAndLowest<Integer> numbers = new HighestAndLowest<>(num);
     HighestAndLowest<Double> doubles2 = new HighestAndLowest<>(doubles);
 
-    public void start() {
+    public void addInList() {
 
         integerMyList.add(12);
         integerMyList.add(14);
@@ -28,9 +28,9 @@ public class Executer {
         longMyList.add(45L);
     }
 
-    public void printResults() {
+    public void start() {
 
-        start();
+        addInList();
 
         System.out.println("Max of integerMyList: " + integerMyList.giveMax());
         System.out.println("Mix of integerMyList: " + integerMyList.giveMin());

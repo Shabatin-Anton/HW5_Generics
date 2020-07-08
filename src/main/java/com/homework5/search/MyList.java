@@ -1,4 +1,4 @@
-package main.java.com.homework5;
+package main.java.com.homework5.search;
 
 import java.util.ArrayList;
 import java.util.Collections;
